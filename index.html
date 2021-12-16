@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form Enhancement & Validation</title>
+        <link rel='stylesheet' href='css/style.css' type='text/css' />
+        <script src="sample-registration-form-validation.js"></script>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form name='registration' id="registration" action="/register" method="post">
+            <ul>
+                <li><label for="username">User Name:</label></li>
+                <li><input type="text" name="username" id="username"/></li>
+                <li><label for="password">Password:</label></li>
+                <li><input type="password" name="password" id="password" /></li>
+                <li><label for="cpassword">Confirm Password:</label></li>
+                <li><input type="password" name="cpassword" id="cpassword"/></li>
+                
+                <li><label for="country">Country:</label></li>
+                <li>
+                    <select name="country" id="country">
+                        <option selected="" value="Default">Select your country</option>
+                        <option value="AU">Australia</option>
+                        <option value="CA">Canada</option>
+                        <option value="IN">India</option>
+                        <option value="RU">Russia</option>
+                        <option value="US">USA</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="checkbox" name="checkbox" value="check" id="agree" /> I accept the terms of service
+                </li>
+                <li><input type="submit" name="submit" id="submit" value="Submit" /></li>
+            </ul>
+            <div id="main"></div>
+        </form>
+        <script src="js/utilities.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
